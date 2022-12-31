@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Fredoka, system-ui, '—apple-system', 'Segoe UI', Rototo, Emoji,
+    Helvetica, Arial, sans-serif;
+}
