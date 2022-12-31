@@ -1,15 +1,24 @@
-import clsxm from '@/lib/clsxm';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
-    <>
-      <header className='layout-header fixed top-0 z-50 hidden w-full md:block'>
-        <div
-          className={clsxm(
-            'flex items-center justify-between px-8 pt-8 text-[#554660]'
-          )}
-        ></div>
-      </header>
-    </>
+    <header className='layout-header flex w-full'>
+      <div className='container mx-auto flex justify-between'>
+        <div className='flex'>
+          <Link href='/' className='logo-box flex items-center justify-center'>
+            <Image src='/logo.svg' width={102} height={52} alt='logo' />
+          </Link>
+          <span className='split-line'></span>
+          <nav className='link flex items-center'>
+            <Link href='/'>DAO Square</Link>
+            <Link href='/mydaos'>MyDAOs</Link>
+          </nav>
+        </div>
+        <div className='flex items-center justify-center'>
+          <span className='dao-account'>Connect Wallet</span>
+        </div>
+      </div>
+    </header>
   );
 }

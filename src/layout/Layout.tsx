@@ -21,7 +21,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <DefaultSeo {...seo} />
       <Header />
       <LazyMotion features={domAnimation}>
-        <m.main initial='initial' animate='enter' exit='exit'>
+        <m.main
+          className='container mx-auto flex-1'
+          initial='initial'
+          animate='enter'
+          exit='exit'
+        >
           {children}
         </m.main>
       </LazyMotion>
