@@ -31,5 +31,10 @@
     background-color: $base-black-bg-color;
     border-radius: 24px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $base-black-bg-hover-color;
+    }
   }
 }

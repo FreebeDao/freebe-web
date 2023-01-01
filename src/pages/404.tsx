@@ -6,7 +6,7 @@ import clsxm from '@/lib/clsxm';
 
 const NotFoundPage: NextPage = () => {
   return (
-    <section className='not-found-page relative h-screen w-screen overflow-hidden bg-[#F0F3F4]'>
+    <section className='not-found-page h-full overflow-hidden bg-[#F0F3F4]'>
       <div className='bg hidden md:block'></div>
       <div className='relative z-10 flex h-full w-full flex-col items-center justify-center pt-14 text-center text-[#554660] md:pt-24'>
         <h1

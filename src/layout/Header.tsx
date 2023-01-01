@@ -1,9 +1,10 @@
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='layout-header flex w-full'>
+    <header className='layout-header flex w-full flex-shrink-0'>
       <div className='container mx-auto flex justify-between'>
         <div className='flex'>
           <Link href='/' className='logo-box flex items-center justify-center'>
@@ -16,7 +17,7 @@ export default function Header() {
           </nav>
         </div>
         <div className='flex items-center justify-center'>
-          <span className='dao-account'>Connect Wallet</span>
+          <ConnectButton />
         </div>
       </div>
     </header>
